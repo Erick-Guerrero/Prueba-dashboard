@@ -1,0 +1,118 @@
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* Estilos para contenedores y otros elementos */
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #005643;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #d1efe9;
+  color: #005643;
+}
+
+.contenedorTable {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonDisabled {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: not-allowed; /* Cambia el cursor cuando el botón está deshabilitado */
+  opacity: 0.5; /* Cambia la opacidad para indicar que el botón está deshabilitado */
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center; /* Cambia el espacio entre los botones */
+  margin-bottom: 20px;
+}
+
+.buttonRow button {
+  border-radius: 10px;
+  padding: 10px 20px; 
+  margin-right: 10px; 
+}
+
+/* Estilos específicos para los botones */
+.buttonRow button:nth-child(1) {
+  background-color: #007bff; 
+  color: white; 
+}
+
+.buttonRow button:nth-child(2) {
+  background-color: #28a745; 
+  color: white; 
+}
+
+.buttonRow button:nth-child(3) {
+  background-color: #dc3545; 
+  color: white; 
+}
+
+
+.buttonRowExcel button.active {
+  background-color: #007bff; /* Color de fondo para el botón activo */
+  color: white; /* Color del texto para el botón activo */
+}
+
+@media screen and (max-width: 768px) {
+    .columnaRenderTicket {
+      display: none;
+    }
+  }

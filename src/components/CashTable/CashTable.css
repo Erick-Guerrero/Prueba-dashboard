@@ -1,0 +1,11 @@
+  /* Si deseas mantener un estilo específico para el botón activo */
+  .buttonRowExcel button.active {
+    background-color: #007bff; /* Color de fondo para el botón activo */
+    color: white; /* Color del texto para el botón activo */
+  }
+
+@media screen and (max-width: 768px) {
+    .columnaRender {
+      display: none;
+    }
+  }

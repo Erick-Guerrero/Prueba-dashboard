@@ -1,0 +1,51 @@
+.centeredModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Color de fondo del contenido */
+    border-radius: 8px; /* Ajusta el radio del borde según sea necesario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Añade sombra si es necesario */
+  }
+  
+  .quantityInput {
+    margin-top: 20px; /* Ajusta el espacio entre el input y el botón según sea necesario */
+  }
+
+  
+  .depositButton {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #007bff; 
+    color: white; 
+  }
+  
+   .extractionButton {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dc3545; 
+    color: white; 
+  }
+  
+  .transferButton {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #28a745; 
+    color: white; 
+  }
+
+  .buttonDisabled {
+    background-color: gray;
+  }

@@ -1,0 +1,110 @@
+.buttonRow {
+    display: flex;
+    justify-content: center; /* Cambia el espacio entre los botones */
+    margin-bottom: 20px;
+  }
+  
+  .buttonRow button {
+    border-radius: 10px;
+    padding: 10px 20px; 
+    margin-right: 10px; 
+  }
+  
+  /* Estilos específicos para los botones */
+  .buttonRow button:nth-child(1) {
+    background-color: #007bff; 
+    color: white; 
+  }
+  
+  .buttonRow button:nth-child(2) {
+    background-color: #28a745; 
+    color: white; 
+  }
+  
+  .buttonRow button:nth-child(3) {
+    background-color: #dc3545; 
+    color: white; 
+  }
+
+.centerCajaCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 43px -19px rgb(59, 59, 59);
+    padding: 20px;
+    
+}
+
+.tituloCaja {
+    font-size: 20px;
+    font-weight: bold;
+    color: #005643;
+
+}
+.titleCaja{
+    font-size: 20px;
+    font-weight: bold;
+    color: #005643;
+    padding: 10px;
+}
+
+.contenidoCaja {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+
+
+.saldoCaja {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+}
+
+
+.Tbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.dashedHr {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px dashed #ccc;
+  }
+
+ 
+@media screen and (max-width: 768px) {
+    .centerCajaCont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: inset 0px 0px 43px -19px rgb(59, 59, 59);
+        padding: 20px;
+    }
+  }

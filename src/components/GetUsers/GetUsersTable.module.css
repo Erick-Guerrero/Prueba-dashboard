@@ -1,0 +1,183 @@
+* {
+    font-family: sans-serif;
+}
+
+.filtroClientes {
+  padding: 10px;
+  font-size: 10px ; /* Tamaño de fuente */
+  color: #d1efe9 ; /* Color de texto */
+  outline: none ; /* Elimina el borde de enfoque (resaltado) al hacer clic */
+  font-family: 'Plexus Sans', sans-serif;   
+  font-weight: 700;
+}
+
+.letrasSelect {
+  border-radius: 15px 15px 0px 0px;
+  border: 3px solid rgb(118, 137, 118) ;
+  background-color: #ffffff ; /* #f0f0f0 */
+  padding: 10px ; /* Espacio interno para contenido */
+  font-size: 14px ; /* Tamaño de fuente */
+  color: #005643 ; 
+  font-family: 'Plexus Sans', sans-serif;   
+  font-weight: 700;
+}
+
+.letrasSelect option {
+  /* Estilos para las opciones, puedes personalizarlos según tus preferencias */
+  background-color: #ffffff; /* Fondo de las opciones */
+  color: #005643 ; /* Color de texto */
+  font-family: 'Plexus Sans', sans-serif;   
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  width: 100vw;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  width: 100%;
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #d1efe9;
+  color:#005643;
+}
+
+.contenedorTable {
+  display: flex;
+  /* background-color: #d1efe9; */
+  margin: 2rem 4rem;
+  /* padding: 2rem; */
+  display: flex;
+  overflow: auto;
+  width: 90vw;
+}
+  
+.contentTable {
+  width: fit-content;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.7em;
+  min-width: 200px;
+  border-radius: 5px 5px 0 0;
+  /* overflow: hidden; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* .contentTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+} */
+
+/* .content-table th,
+.content-table td:not(.icono) {
+    text-align: center;
+  } */
+.icono button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  /* Agrega aquí los estilos específicos para el botón dentro de la clase icono */
+}
+
+/* .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+} */
+
+th{
+  background-color: #009879;
+  color: white;
+  /* border: 1px solid rgba(0, 0, 0, 0.668); */
+  width: 10rem;
+}
+
+td{
+  padding:0.5rem;
+  background-color: white;
+  border-bottom: 0.5px solid rgba(138, 138, 138, 0.668);
+}
+
+
+
+/* Clients.css */
+/* Agrega esta regla @media al final del archivo CSS para ocultar las columnas en dispositivos móviles */
+@media (max-width: 768px) {
+  th:nth-child(2),
+  td:nth-child(2),
+  th:nth-child(6),
+  td:nth-child(6),
+  th:nth-child(7),
+  td:nth-child(7),
+  th:nth-child(8),
+  td:nth-child(8),
+  th:nth-child(9),
+  td:nth-child(9),
+  th:nth-child(10),
+  td:nth-child(10),
+  th:nth-child(11),
+  td:nth-child(11),
+  th:nth-child(12),
+  td:nth-child(12),
+  th:nth-child(13),
+  td:nth-child(13),
+  th:nth-child(14),
+  td:nth-child(14),
+  th:nth-child(15),
+  td:nth-child(15),
+  th:nth-child(16),
+  td:nth-child(16),
+  th:nth-child(17),
+  td:nth-child(17),
+  th:nth-child(18),
+  td:nth-child(18),
+  th:nth-child(19),
+  td:nth-child(19),
+  th:nth-child(20),
+  td:nth-child(20), 
+  th:nth-child(21),
+  td:nth-child(21)  {
+    display: none;
+  }
+}
+  
+  @media (max-width: 768px) {
+    .tabla-tickets th:nth-child(4),
+    .tabla-tickets td:nth-child(4),
+    .tabla-tickets th:nth-child(5),
+    .tabla-tickets td:nth-child(5)  {
+      display: none;
+    }
+
+
+    .tabla-tickets {
+        font-size: 0.7em;
+    }
+  }

@@ -1,0 +1,52 @@
+.globalContainerCard {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+
+.containerCentered{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+
+.containerHomeGrid {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  }
+
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 639px) {
+  .globalContainerCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 26px; /* Opcional: Agrega espacio entre las tarjetas */
+  }
+  
+.containerCentered{
+  margin-top: 20px;
+  margin-bottom: 20px;
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 26px;
+}
+.globalContainerCard br{
+display: none;
+}
+
+}
+  
