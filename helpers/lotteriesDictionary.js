@@ -2,9 +2,11 @@ export const lotteriesDictionary = [
     {
       name: 'Anguilla',
       hr: [
-        '9:00',
-        '11:00',
+        '09:00',
         '10:00',
+        '11:00',
+        '12:05',
+        '15:00',
         '15:30',
         '16:00',
         '17:00',
@@ -23,7 +25,7 @@ export const lotteriesDictionary = [
     },
     {
       name: 'La Suerte Dominicana',
-      hr: ['12:30'],
+      hr: ['12:30','18:00'],
       imageUrl:
         'https://enloteria.com/assets/la_suerte-503a3d9314a080d132a414fdc5a6940ddd50ef1d235dcc621bc1bc7f7516fbb1.svg',
     },
@@ -77,6 +79,12 @@ export const lotteriesDictionary = [
     },
     {
       name: 'Nacional',
+      hr: ['21:00'],
+      imageUrl:
+        'https://enloteria.com/assets/nacional-6f4e8ccd25d07edb6452e418cbfab9ae8ec36f728266fc7189a6ee68e7bdd4f0.svg',
+    },
+    {
+      name: 'Nacional Domingo',
       hr: ['18:00'],
       imageUrl:
         'https://enloteria.com/assets/nacional-6f4e8ccd25d07edb6452e418cbfab9ae8ec36f728266fc7189a6ee68e7bdd4f0.svg',

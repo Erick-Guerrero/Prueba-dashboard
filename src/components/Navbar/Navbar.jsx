@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Mis clientes', to: '/clientes', current: false },
   { name: 'Caja', to: '/caja', current: false },
   { name: 'Ticket', to: '/ticketView', current: false },
-
+  { name: 'Utilidades', to: '/utilidades', current: false },
 ];
 
 function classNames(...classes) {

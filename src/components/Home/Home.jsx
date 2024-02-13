@@ -29,10 +29,15 @@ function Home() {
       detalle: "detalle y validación",
       link: "/ticketView"
     },
+    {
+      nombre: "Utilidades",
+      detalle: "Agregar número",
+      link: "/utilidades"
+    },
   ];
 
-  const firstThree = objeto.slice(0, 3); // Obtener los primeros 3 elementos
-  const remainingTwo = objeto.slice(3); // Obtener los elementos restantes
+  // const firstThree = objeto.slice(0, 3); // Obtener los primeros 3 elementos
+  // const remainingTwo = objeto.slice(5); // Obtener los elementos restantes
 
   return (
     <>
@@ -41,20 +46,14 @@ function Home() {
       <div className="containerHomeGrid">
         <div className="globalContainerCard">
           {/* Renderizar los primeros 3 elementos en un grid */}
-          {firstThree.map((item, index) => (
+          {objeto.map((item, index) => (
             <CardComponent key={index} nombre={item.nombre} detalle={item.detalle} link={item.link} />
           ))}
         </div>
+
           </div>
-          {/* <br/> */}
-          <div className="containerHomeGrid">
-        <div className="containerCentered">
-          {/* Renderizar los elementos restantes centrados */}
-          {remainingTwo.map((item, index) => (
-            <CardComponent key={index} nombre={item.nombre} detalle={item.detalle} link={item.link} />
-          ))}
-        </div>
-        </div>
+          
+         
 
     </>
   );

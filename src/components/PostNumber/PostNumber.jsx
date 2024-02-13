@@ -10,20 +10,7 @@ import { lotteriesDictionary } from '../../../helpers/lotteriesDictionary';
 function PostNumber({ open, onClose }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  // useEffect(() => {
-        // setFormData({
-        //     number1: 1,
-        //     number2: 2,
-        //     number3: 3,
-        //     hr: "",
-        //     page: "",
-        //     nameLottery: "Anguilla",
-        //     imageUrl: "",
-        //     day: "2024/01/15"
-        // });
-  // }, [open]);
-
+  
   const [formData, setFormData] = useState({
     number1: "",
     number2: "",
@@ -40,21 +27,22 @@ function PostNumber({ open, onClose }) {
       // Find the selected lottery in the dictionary
       const selectedLottery = lotteriesDictionary.find(
         (lottery) => lottery.name === value
-      );
-  
-      // Update the imageUrl field with the selected lottery's imageUrl
-      setFormData({
-        ...formData,
-        [field]: value,
-        imageUrl: selectedLottery ? selectedLottery.imageUrl : '',
-      });
-    } else {
-      setFormData({
-        ...formData,
-        [field]: value,
-      });
-    }
-  };
+        );
+        
+        // Update the imageUrl field with the selected lottery's imageUrl
+        setFormData({
+          ...formData,
+          [field]: value,
+          imageUrl: selectedLottery ? selectedLottery.imageUrl : '',
+        });
+      } else {
+        setFormData({
+          ...formData,
+          [field]: value,
+        });
+      }
+    };
+    // console.log(formData);
   
   const handleSubmit = async () => {
     // console.log('Formulario enviado:', formData);
@@ -81,27 +69,6 @@ function PostNumber({ open, onClose }) {
 
             <div style={{ maxHeight: 'calc(100vh - 200px)', overflowY: 'auto',}}>
             {/*... Aquí estarían todos tus inputs...*/}
-{/* 
-              <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center',}}>
-                <div >
-                  <Label htmlFor="page" value="page"/>
-                </div>
-                <TextInput
-                  style={{
-                    paddingLeft: '0.5rem',
-                    marginLeft: '0.5rem',
-                    width: '200px',
-                    height: '40px',
-                    borderRadius: '10px',
-                  }}
-                  id="page"
-                  value={formData.page}
-                  onChange={(event) =>
-                    handleInputChange('page', event.target.value)
-                  }
-                  required
-                />
-              </div> */}
 
               <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center',}}>
                 <img src={formData.imageUrl} alt="" />
@@ -153,6 +120,7 @@ function PostNumber({ open, onClose }) {
                     handleInputChange('hr', event.target.value)
                   }
                 >
+                    <option value=''>Elije el horario</option>
                     {lotteriesDictionary
                       .filter((lottery) => lottery.name === formData.nameLottery)
                       .map((lottery) => (
@@ -166,27 +134,6 @@ function PostNumber({ open, onClose }) {
 
                 </Select>
               </div>
-{/* 
-              <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center',}}>
-                <div className="block">
-                  <Label htmlFor="imageUrl" value="image Url" />
-                </div>
-                <TextInput
-                  style={{
-                    paddingLeft: '0.5rem',
-                    marginLeft: '0.5rem',
-                    width: '200px',
-                    height: '40px',
-                    borderRadius: '10px',
-                  }}
-                  id="imageUrl"
-                  value={formData.imageUrl}
-                  onChange={(event) =>
-                    handleInputChange('imageUrl', event.target.value)
-                  }
-                  required
-                />
-              </div> */}
 
               <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center',}}>
                 <div className="block">
@@ -230,7 +177,7 @@ function PostNumber({ open, onClose }) {
                   }
                   required
                   min='0'
-                  max='99'
+                  max='100'
                 />
               </div>
 
@@ -254,7 +201,7 @@ function PostNumber({ open, onClose }) {
                   }
                   required
                   min='0'
-                  max='99'
+                  max='100'
                 />
               </div>
 
@@ -278,7 +225,7 @@ function PostNumber({ open, onClose }) {
                   }
                   required
                   min='0'
-                  max='99'
+                  max='100'
                 />
               </div>
 

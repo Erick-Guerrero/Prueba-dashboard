@@ -8,6 +8,7 @@ import Caja from './components/Caja/Caja';
 import GetUsers from './components/GetUsers/GetUsers'
 import AuthGuard from './components/AuthGuard/AuthGuard';
 import TicketView from './components/TicketsView/TicketView'
+import UtilidadesView from './components/UtilidadesView/UtilidadesView';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/form" element={<ClientForm />}/>
           <Route exact path="/ticketView" element={<TicketView />} />
           <Route exact path="/caja" element={<Caja/>}/>
+          <Route exact path="/utilidades" element={<UtilidadesView/>}/>
         </Route>
 
 

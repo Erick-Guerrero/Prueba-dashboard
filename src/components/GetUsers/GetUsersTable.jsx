@@ -150,33 +150,35 @@ export default function UsersTable() {
         className={style.contentTable + style.tablaClientes}
         >
           <thead>
-            <tr>
-              <th>Nº</th>
-              <th>Nombre</th>
-              <th>DNI</th>
-              <th>Email</th>
-              <th>Rol</th>
-              <th>Tel. PLIN</th>
-              <th>Tel. YAPE</th>
-              <th>Contacto Nombre</th>
-              <th>Contacto email </th>
-              <th>Contacto tel.</th>
-              <th>Contacto DNI</th>
-              <th>Cta. Bancaria 1</th>
-              <th>Cta. Bancaria 2</th>
-              <th>Dirección</th>
-              <th>Departmento</th>
-              <th>Distrito</th>
-              <th>Provincia</th>
-              <th>Urbanización</th>
-              <th style={{fontSize:'0.5rem'}}>% Comisión Venta</th>
-              <th style={{fontSize:'0.5rem'}}>% Comisión Pago</th>
-              <th style={{fontSize:'0.5rem'}}>1er Premio</th>
-              <th style={{fontSize:'0.5rem'}}>2do Premio</th>
-              <th style={{fontSize:'0.5rem'}}>3er Premio</th>
-              <th>Editar</th>
-              <th>Borrar</th>
-              <th>Activo</th>
+            <tr className='border'>
+              <th className='border'>Nº</th>
+              <th >Nombre</th>
+              <th >DNI</th>
+              <th >Email</th>
+              <th >Rol</th>
+              <th className='border-l'>Tel. PLIN</th>
+              <th >Tel. YAPE</th>
+              <th >Cta. Bancaria 1</th>
+              <th >Cta. Bancaria 2</th>
+              <th >Interbancario 1</th>
+              <th >Interbancario 2</th>
+              <th className='border-l'>Contacto Nombre</th>
+              <th >Contacto email </th>
+              <th >Contacto tel.</th>
+              <th >Contacto DNI</th>
+              <th className='border-l'>Dirección</th>
+              <th >Departmento</th>
+              <th >Distrito</th>
+              <th >Provincia</th>
+              <th >Urbanización</th>
+              <th className='border-l' style={{fontSize:'0.5rem'}}>% Comisión Venta</th>
+              <th  style={{fontSize:'0.5rem'}}>% Comisión Pago</th>
+              <th  style={{fontSize:'0.5rem'}}>1er Premio</th>
+              <th  style={{fontSize:'0.5rem'}}>2do Premio</th>
+              <th  style={{fontSize:'0.5rem'}}>3er Premio</th>
+              <th className='border'>Editar</th>
+              <th className='border'>Borrar</th>
+              <th className='border'>Activo</th>
             </tr>
           </thead>
 
@@ -184,31 +186,33 @@ export default function UsersTable() {
             {filteredUsers?.length > 0 ? (
               filteredUsers.map((c, index) => (
                 <tr key={c.id} className={index % 2 === 0 ? 'active-row' : ''}>
-                  <td>{c.id}</td>
-                  <td>{c.name}</td>
-                  <td>{c.dni}</td>
-                  <td>{c.email}</td>
-                  <td>{c.role}</td>
-                  <td>{c.phonePLIN}</td>
-                  <td>{c.phoneYAPE}</td>
-                  <td>{c.contactName}</td>
-                  <td>{c.contactEmail}</td>
-                  <td>{c.contactPhone}</td>
-                  <td>{c.contactDni}</td>
-                  <td>{c.bankAccount1}</td>
-                  <td>{c.bankAccount2}</td>
-                  <td>{c.address}</td>
-                  <td>{c.department}</td>
-                  <td>{c.district}</td>
-                  <td>{c.province}</td>
-                  <td>{c.urbanization}</td>
-                  <td>{c.salesCommissionPercentage} %</td>
-                  <td>{c.paymentCommissionPercentage} %</td>
-                  <td>{c.firstPrize}</td>
-                  <td>{c.SecondPrize}</td>
-                  <td>{c.ThirdPrize}</td>
+                  <td className='border  border-neutral-400'>{c.id}</td>
+                  <td className='border-l'>{c.name}</td>
+                  <td className='border-l'>{c.dni}</td>
+                  <td className='border-l'>{c.email}</td>
+                  <td className='border-l'>{c.role}</td>
+                  <td className='border border-l-neutral-400'>{c.phonePLIN}</td>
+                  <td className='border-l'>{c.phoneYAPE}</td>
+                  <td className='border-l'>{c.bankAccount1}</td>
+                  <td className='border-l'>{c.bankAccount2}</td>
+                  <td className='border-l'>{c.interbancario1}</td>
+                  <td className='border-l'>{c.interbancario2}</td>
+                  <td className='border border-l-neutral-400'>{c.contactName}</td>
+                  <td className='border-l'>{c.contactEmail}</td>
+                  <td className='border-l'>{c.contactPhone}</td>
+                  <td className='border-l'>{c.contactDni}</td>
+                  <td className='border border-l-neutral-400'>{c.address}</td>
+                  <td className='border-l'>{c.department}</td>
+                  <td className='border-l'>{c.district}</td>
+                  <td className='border-l'>{c.province}</td>
+                  <td className='border-l'>{c.urbanization}</td>
+                  <td className='border  border-l-neutral-400'>{c.salesCommissionPercentage} %</td>
+                  <td className='border-l'>{c.paymentCommissionPercentage} %</td>
+                  <td className='border-l'>{c.firstPrize}</td>
+                  <td className='border-l'>{c.SecondPrize}</td>
+                  <td className='border-l'>{c.ThirdPrize}</td>
 
-                  <td className="icono">
+                  <td className='border-l  border-l-neutral-400 icono' >
                     <button onClick={() => handleEditClick(c.id)}>
                       <img
                         style={{
@@ -222,7 +226,7 @@ export default function UsersTable() {
                     </button>
                   </td>
 
-                  <td className="icono">
+                  <td className='border-l icono' >
                     <button onClick={() => handleDeleteClick(c.id)}>
                       <img
                         style={{
@@ -236,7 +240,7 @@ export default function UsersTable() {
                     </button>
                   </td>
 
-                  <td className="icono">
+                  <td className='border  border-r-neutral-400 icono' >
                     {c.name !== 'Erick Guerrero' && (
                       <button
                         className="border-black rounded-md"
