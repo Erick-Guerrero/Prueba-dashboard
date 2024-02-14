@@ -21,6 +21,8 @@ function UserForm() {
     contactName: '',
     contactEmail: '',
     contactPhone: '',
+    businessName:'',
+    ownerPhone:'',
     contactDni: '',
     phoneYAPE: '',
     phonePLIN: '',
@@ -121,9 +123,12 @@ function UserForm() {
               <h2 className="text-green-950 font-semibold">
                 Datos personales del titular
               </h2>
+
+
+
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="name">
-                  Nombre Local
+                  Nombre/Apellido
                 </label>
                 <input
                   type="text"
@@ -134,23 +139,11 @@ function UserForm() {
                   className={style.letras}
                 />
               </div>
-              <div className={style.contenedorInput}>
-                <label className={style.titleInfo} htmlFor="name">
-                  Documento de Identidad
-                </label>
-                <input
-                  type="text"
-                  id="dni"
-                  name="dni"
-                  value={formData.dni}
-                  onChange={handleChange}
-                  className={style.letras}
-                />
-              </div>
+
 
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="phone">
-                  Correo Electrónico
+                  Email
                 </label>
                 <input
                   type="text"
@@ -166,6 +159,49 @@ function UserForm() {
                   </p>
                 )}
               </div>
+
+              <div className={style.contenedorInput}>
+                <label className={style.titleInfo} htmlFor="name">
+                  Teléfono
+                </label>
+                <input
+                  type="text"
+                  id="ownerPhone"
+                  name="ownerPhone"
+                  value={formData.ownerPhone}
+                  onChange={handleChange}
+                  className={style.letras}
+                />
+              </div>
+
+              <div className={style.contenedorInput}>
+                <label className={style.titleInfo} htmlFor="name">
+                  Documento de Identidad
+                </label>
+                <input
+                  type="text"
+                  id="dni"
+                  name="dni"
+                  value={formData.dni}
+                  onChange={handleChange}
+                  className={style.letras}
+                />
+              </div>
+
+              <div className={style.contenedorInput}>
+                <label className={style.titleInfo} htmlFor="name">
+                  Nombre del local
+                </label>
+                <input
+                  type="text"
+                  id="businessName"
+                  name="businessName"
+                  value={formData.businessName}
+                  onChange={handleChange}
+                  className={style.letras}
+                />
+              </div>
+
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="password">
                   Contraseña
@@ -187,7 +223,7 @@ function UserForm() {
               </h2>
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="name">
-                  Nombre del contacto
+                Nombre/Apellido
                 </label>
                 <input
                   type="text"
@@ -200,7 +236,7 @@ function UserForm() {
               </div>
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="name">
-                  Email del contacto
+                  Email
                 </label>
                 <input
                   type="text"
@@ -213,7 +249,7 @@ function UserForm() {
               </div>
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="name">
-                  Teléfono del contacto
+                  Teléfono
                 </label>
                 <input
                   type="text"
@@ -226,7 +262,7 @@ function UserForm() {
               </div>
               <div className={style.contenedorInput}>
                 <label className={style.titleInfo} htmlFor="name">
-                  Documento de Identidad del contacto
+                  Documento de Identidad
                 </label>
                 <input
                   type="text"
