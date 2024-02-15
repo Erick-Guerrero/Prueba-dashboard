@@ -24,6 +24,8 @@ function PutUser({ open, onClose, id }) {
           email: selectedUser.email,
           role: selectedUser.role,
           dni: selectedUser.dni,
+          businessName:selectedUser.businessName,
+          ownerPhone:selectedUser.ownerPhone,
           contactName: selectedUser.contactName,
           contactEmail: selectedUser.contactEmail,
           contactPhone: selectedUser.contactPhone,
@@ -54,6 +56,8 @@ function PutUser({ open, onClose, id }) {
     email: '',
     role: 'User',
     dni: '',
+    ownerPhone:"",
+    businessName:"",
     contactName: '',
     contactEmail: '',
     contactPhone: '',
@@ -184,6 +188,62 @@ function PutUser({ open, onClose, id }) {
                         value={formData.dni}
                         onChange={(event) =>
                           handleInputChange('dni', event.target.value)
+                        }
+                        required
+                      />
+                    </div>
+
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <div>
+                        <Label htmlFor="businessName" value="BUSINESSNAME" />
+                      </div>
+                      <TextInput
+                        style={{
+                          paddingLeft: '0.5rem',
+                          marginLeft: '0.5rem',
+                          width: '200px',
+                          height: '40px',
+                          borderRadius: '10px',
+                        }}
+                        id="businessName"
+                        value={formData.businessName}
+                        onChange={(event) =>
+                          handleInputChange('businessName', event.target.value)
+                        }
+                        required
+                      />
+                    </div>
+
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <div>
+                        <Label htmlFor="ownerPhone" value="OWNERPHONE" />
+                      </div>
+                      <TextInput
+                        style={{
+                          paddingLeft: '0.5rem',
+                          marginLeft: '0.5rem',
+                          width: '200px',
+                          height: '40px',
+                          borderRadius: '10px',
+                        }}
+                        id="ownerPhone"
+                        value={formData.ownerPhone}
+                        onChange={(event) =>
+                          handleInputChange('ownerPhone', event.target.value)
                         }
                         required
                       />

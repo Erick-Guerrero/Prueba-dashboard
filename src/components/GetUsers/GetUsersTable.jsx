@@ -154,6 +154,8 @@ export default function UsersTable() {
               <th className='border'>Nº</th>
               <th >Nombre</th>
               <th >DNI</th>
+              <th >Tel</th>
+              <th >Local</th>
               <th >Email</th>
               <th >Rol</th>
               <th className='border-l'>Tel. PLIN</th>
@@ -163,9 +165,9 @@ export default function UsersTable() {
               <th >Interbancario 1</th>
               <th >Interbancario 2</th>
               <th className='border-l'>Contacto Nombre</th>
-              <th >Contacto email </th>
-              <th >Contacto tel.</th>
-              <th >Contacto DNI</th>
+              <th >Cont. email </th>
+              <th >Cont. tel.</th>
+              <th >Cont. DNI</th>
               <th className='border-l'>Dirección</th>
               <th >Departmento</th>
               <th >Distrito</th>
@@ -189,6 +191,8 @@ export default function UsersTable() {
                   <td className='border  border-neutral-400'>{c.id}</td>
                   <td className='border-l'>{c.name}</td>
                   <td className='border-l'>{c.dni}</td>
+                  <td className='border-l'>{c.ownerPhone}</td>
+                  <td className='border-l'>{c.businessName}</td>
                   <td className='border-l'>{c.email}</td>
                   <td className='border-l'>{c.role}</td>
                   <td className='border border-l-neutral-400'>{c.phonePLIN}</td>
