@@ -33,7 +33,7 @@ export const GET_TICKET_GNC = "GET_TICKET_GNC";
 
 // const app = "https://erick-guerrero-back-production.up.railway.app";
 
-const app = "https://back-production-3b46.up.railway.app"
+const app = "https://prueba-back-production-ec63.up.railway.app"
 
 //const app = "http://localhost:3001";
 
