@@ -29,8 +29,6 @@ export const GET_TICKET_DATE = "GET_TICKET_DATE";
 export const PATCH_TICKET_GNC = "PATCH_TICKET_GNC";
 export const GET_TICKET_GNC = "GET_TICKET_GNC";
 
-
-
 // const app = "https://erick-guerrero-back-production.up.railway.app";
 
 const app = "https://prueba-back-production-ec63.up.railway.app"
